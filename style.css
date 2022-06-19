@@ -5,7 +5,7 @@
     align-items: center;
     margin-top: 40px;
     float: left;
-    margin-left: 220px;
+    margin-left: 230px;
     text-align: center;
     
 }
@@ -16,14 +16,16 @@ table{
 
 #screen{
     display: block;
-    background-color: greenyellow;
+    background-color: rgb(137, 228, 0);
     border-radius: 0px 0px 20px 20px;
-    border: 2px solid white;
+    border: none;
+    margin-left: 5px;
     font-size:34px;
     height: 60px;
     width: 365px;
     border-top: none;
     text-align: end;
+    
 }
 
 button{
@@ -62,13 +64,14 @@ button:active{
     outline: none;
 }
 .subinput{
-    margin-top: 3px;
-    background-color: greenyellow;
+    margin-top: 5px;
+    padding-right: 20px;
+    background-color:  rgb(137, 228, 0);
     border-radius: 20px 20px 0px 0px;
     border: none;
     height:20px;
-    margin-right: 13px;
-    width:365px;
+    margin-right: 7px;
+    width:347px;
     text-align: right;
     font-size:18px;
     border-bottom: none;
@@ -81,10 +84,11 @@ button:active{
     height: 500px;
     width: 300px;
     color: azure;
-    margin-right: 300px;
+    margin-right: 250px;
     margin-top: 40px;
     float: right;
     border-radius: 20px;
+    overflow: auto;
 }
 .his{
     border: 1px solid white;

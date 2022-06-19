@@ -53,6 +53,8 @@ var equation;
             function showHistory()
             {
                 var history="<div>";
+                eq.reverse();
+                answers.reverse();
                 for(let i=0;i<eq.length;i++)
                 {
                     history+="<div class='his'><p>"+eq[i]+""+answers[i]+"</p></div>";
@@ -71,3 +73,4 @@ var equation;
                     answers=[];
                 }
             }
+            
