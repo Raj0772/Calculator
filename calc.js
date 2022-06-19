@@ -15,6 +15,26 @@ var equation;
                 }
                 
             }
+            //Delete Last Digit From Input
+            function lastNum()
+            {
+                if(inputVal.value!="")
+                {
+                    if(inputVal.value.length>1)
+                        inputVal.value=inputVal.value.slice(0,-1);
+                    else
+                    {
+                        inputVal.value=inputVal.value.slice(0,-1);
+                        inputVal.value="0";
+                    }
+
+                }
+                else
+                {
+                    inputVal.value="0";
+                }
+            }
+
             function cleardisplay()
             {
                 inputVal.value="0";
