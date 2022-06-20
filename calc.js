@@ -73,4 +73,10 @@ var equation;
                     answers=[];
                 }
             }
+            function hide(){
+                    document.querySelector(".history").style.display="none";
+            }
+            function show(){
+                document.querySelector(".history").style.display="block";
+            }
             
