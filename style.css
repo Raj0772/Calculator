@@ -27,11 +27,15 @@ table{
     text-align: end;
     
 }
+.align{
+    display: inline-block;
+    
+}
 
 button{
+    box-shadow: inset 2px 6px 23px grey;
     border-radius: 50%;
     font-size: 30px;
-    background: rgb(255, 171, 76);
     width: 80px;
     height: 60px;
     margin: 6px;
@@ -47,7 +51,7 @@ button{
     
 }
 button:hover{
-    background-color:grey;
+    background-color:rgb(178, 177, 177);
     color: white;
 }
 button:active{
@@ -76,10 +80,11 @@ button:active{
 
 }
 .history{
+    display: none;
     border: 2px solid white;
     text-align: center;
-    background-color: grey;
-    height: 570px;
+    background-color: rgb(130, 153, 0);
+    height: 500px;
     width: 300px;
     color: azure;
     margin-right: 250px;
@@ -95,19 +100,19 @@ button:active{
     font-size: 20px;
 }
 .btneq{
-    background-color: rgb(0, 255, 153);
+    background-color: rgb(23, 164, 203);
     box-shadow: none;
     border-radius: 15px;
 }
 .btnbck{
     border-radius: 25px;
     box-shadow: none;
-    background-color: rgb(255, 191, 0);
+    background-color: rgb(228, 0, 0);
 }
 .btnclear{
     border-radius: 25px;
     box-shadow: none;
-    background-color: rgb(255, 14, 14);
+    background-color: rgb(228, 0, 0);
 }
 p{
     font-size: 20px;
@@ -115,5 +120,18 @@ p{
 .btnop{
     border-radius: 25px;
     box-shadow: none;
-    background-color: rgb(0, 164, 214);
+    color: white;
+    background-color: rgb(23, 164, 203);
+}
+.btnbck:hover{
+    background-color: red;
+}
+.btnclear:hover{
+    background-color: red;
+}
+.btnop:hover{
+    background-color: rgb(0, 209, 209);
+}
+.btneq:hover{
+    background-color: greenyellow;
 }

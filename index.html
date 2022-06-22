@@ -18,18 +18,12 @@
             <input type="text" name="screen" id="screen" placeholder="0" style="font-size:45px ">
             </div>
             <table>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><button class="btnbck" onclick="lastNum()"style="font-size:30px"><i class="fa-solid fa-delete-left"></i></button></td>
-                </tr>
+        
                 <tr>
                     <td><button class="btnclear" onclick="cleardisplay()" style=" font-size: 40px;"><i class="fa-regular fa-c"></i></button></td>
-                    <td><button class="btnop" onclick="hide()"><i class="fa-solid fa-eye-slash"></i></button></td>
                     <td><button class="btnop" onclick="show()"><i class="fa-solid fa-eye"></i></button></td>
                     <td><button class="btnop" onclick="calculate('%')">%</button></td>
-                    
+                    <td><button class="btnbck" onclick="lastNum()"style="font-size:30px"><i class="fa-solid fa-delete-left"></i></button></td>
                 </tr>
                 <tr>
                     <td><button onclick="calculate('7')"><i class="fa-solid fa-7"></i></button></td>
@@ -59,15 +53,16 @@
         </div>
     </div>
     <div class="history">
+        <div class="align">
+        <p style="margin-left: 250px; " onclick="hide()"><i class="fa-solid fa-circle-xmark"></i></p>
         <h2>History</h2>
-        <p onclick="clearHistory()"><i class="fa-solid fa-trash"></i></p>
+        <p style="color: rgb(50, 78, 0);" onclick="clearHistory()"><i class="fa-solid fa-trash"></i></p>
+        </div>
         <div id="history">
         </div>
 
     </div>
-<script src="calc.js">
-            
-        </script>
+    <script src="calc.js"></script>
 
 </body>
 </html>
