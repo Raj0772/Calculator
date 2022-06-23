@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+    padding: 0;
+}
 .container{
     display: flex;
     flex-wrap: nowrap;
@@ -94,6 +98,8 @@ button:active{
     overflow: auto;
 }
 .his{
+    display: flex;
+    justify-content: center;
     border: 1px solid white;
     text-align: center;
     font-style: bold;
@@ -135,3 +141,12 @@ p{
 .btneq:hover{
     background-color: greenyellow;
 }
+h4{
+    margin-top: 15px;
+    background-color: brown;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+} 
+
+

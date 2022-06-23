@@ -57,7 +57,7 @@ var equation;
                 answers.reverse();
                 for(let i=0;i<eq.length;i++)
                 {
-                    history+="<div class='his'><p>"+eq[i]+""+answers[i]+"</p></div>";
+                    history+="<div class='his'><h4 id='"+i+"'>&larr;</h4><p>"+eq[i]+""+answers[i]+"</p></div>";
                 }
                 history+="</div>";
                 document.querySelector("#history").innerHTML=history;
@@ -79,4 +79,10 @@ var equation;
             function show(){
                 document.querySelector(".history").style.display="block";
             }
+            document.querySelector("#history").addEventListener('click',function(e)
+            {
+                questionInput.value=eq[e.target.id];
+                inputVal.value=answers[e.target.id];
+            })
+
             
